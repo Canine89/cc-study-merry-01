@@ -45,13 +45,20 @@
 
 ## 링크 미리보기 (카카오톡 · 문자)
 
-- 공유 주소: `https://example.com/wedding/` ← **실제 주소로 바꿔야 함**
+- 공유 주소: `https://cc-study-merry-01.vercel.app/` (Vercel 배포 주소)
 - 미리보기 제목: 김도윤 ♥ 이서연 결혼합니다
 - 미리보기 설명: 2026년 11월 14일 토요일 오후 1시 30분 / 제주 서귀포 아쿠아플라넷 웨딩홀
 - 썸네일: `images/thumb.jpg` (1200×1200, 메인 사진 정사각형 크롭)
 
 > og:image는 상대경로가 아니라 전체 주소여야 합니다.
 > 주소를 바꾼 뒤 https://developers.kakao.com/tool/debugger/sharing 에서 캐시를 초기화하세요.
+
+## Supabase
+
+- 프로젝트: `wedding-invitation` (ref `ppwuphgcemcytzpeuluk`, ap-northeast-2)
+- 표: `rsvp`(넣기 전용), `guestbook`(넣기 + 읽기)
+- 접속 정보는 Vercel 환경 변수 `SUPABASE_URL`, `SUPABASE_ANON_KEY` 로 주입됩니다.
+- 참석 회신은 화면에 표시되지 않습니다. 대시보드 Table Editor 에서 확인하세요.
 
 ## 마음 전하실 곳
 
