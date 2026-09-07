@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>김도윤 ♥ 이서연 결혼합니다</title>
+
+<!-- ===========================================================
+     카카오톡 · 문자 미리보기(링크 공유) 설정
+
+     ▸ 아래 https://example.com/wedding 을 실제 주소로 모두 바꿔주세요.
+       카카오톡은 상대경로(images/thumb.jpg)를 읽지 못합니다.
+       반드시 https:// 로 시작하는 전체 주소여야 미리보기에 사진이 뜹니다.
+
+     ▸ 주소를 바꾼 뒤에는 카카오가 예전 정보를 캐시해두고 있으므로
+       https://developers.kakao.com/tool/debugger/sharing 에서
+       "초기화"를 눌러야 새 미리보기가 반영됩니다.
+     =========================================================== -->
+
+<link rel="canonical" href="https://example.com/wedding/">
+<meta name="description" content="2026년 11월 14일 토요일 오후 1시 30분, 제주 서귀포 아쿠아플라넷 웨딩홀">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="김도윤 · 이서연의 결혼식">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://example.com/wedding/">
+<meta property="og:title" content="김도윤 ♥ 이서연 결혼합니다">
+<meta property="og:description" content="2026년 11월 14일 토요일 오후 1시 30분&#10;제주 서귀포 아쿠아플라넷 웨딩홀">
+
+<!-- 미리보기 썸네일: 메인 사진을 정사각형으로 자른 1200×1200 -->
+<meta property="og:image" content="https://example.com/wedding/images/thumb.jpg">
+<meta property="og:image:secure_url" content="https://example.com/wedding/images/thumb.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="유채꽃밭에서 손을 잡고 걷는 신랑 신부">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="김도윤 ♥ 이서연 결혼합니다">
+<meta name="twitter:description" content="2026년 11월 14일 토요일 오후 1시 30분 · 제주 서귀포 아쿠아플라넷 웨딩홀">
+<meta name="twitter:image" content="https://example.com/wedding/images/thumb.jpg">
+
+<link rel="icon" href="images/thumb.jpg">
+<link rel="apple-touch-icon" href="images/thumb.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="invitation">
+
+  <!-- 1. 메인 사진 -->
+  <section class="hero">
+    <p class="hero__label reveal">WE ARE GETTING MARRIED</p>
+    <div class="hero__frame reveal">
+      <img src="images/photo-01.jpg" alt="유채꽃밭에서 손을 잡고 걷는 신랑 신부" width="1129" height="1400">
+    </div>
+    <p class="hero__date reveal">2026 . 11 . 14 &nbsp;SAT&nbsp; 1:30 PM</p>
+  </section>
+
+  <!-- 2. 두 사람 이름 -->
+  <section class="names">
+    <div class="names__row reveal">
+      <span class="names__name">김도윤</span>
+      <span class="names__amp">그리고</span>
+      <span class="names__name">이서연</span>
+    </div>
+    <p class="names__parents reveal">
+      김성호 · 이미경 의 장남 <b>도윤</b><br>
+      이재우 · 박은주 의 차녀 <b>서연</b>
+    </p>
+  </section>
+
+  <hr class="rule reveal">
+
+  <!-- 3. 인사말 -->
+  <section class="section greeting">
+    <h2 class="section__title reveal">초대합니다</h2>
+    <p class="greeting__body reveal">
+      봄볕이 따뜻하던 날 처음 만나<br>
+      네 번의 계절을 함께 지나왔습니다.
+    </p>
+    <p class="greeting__body reveal">
+      이제 같은 곳을 바라보며<br>
+      한 길을 걸어가려 합니다.
+    </p>
+    <p class="greeting__body reveal">
+      저희 두 사람이 시작하는 자리에<br>
+      오셔서 축복해 주시면 큰 기쁨이겠습니다.
+    </p>
+  </section>
+
+  <!-- 4. 날짜와 시간 -->
+  <section class="section calendar-section">
+    <h2 class="section__title reveal">날짜와 시간</h2>
+    <p class="calendar__headline reveal">2026년 11월 14일 토요일<br>오후 1시 30분</p>
+
+    <!-- data-wedding: 달력·디데이 계산의 기준값 -->
+    <div class="calendar reveal" id="calendar" data-wedding="2026-11-14T13:30:00+09:00"></div>
+
+    <p class="calendar__dday reveal" id="dday"></p>
+  </section>
+
+  <hr class="rule reveal">
+
+  <!-- 5. 장소와 지도 -->
+  <section class="section place">
+    <h2 class="section__title reveal">오시는 길</h2>
+    <p class="place__name reveal">제주 서귀포 아쿠아플라넷 웨딩홀</p>
+    <p class="place__addr reveal">
+      제주특별자치도 서귀포시 성산읍 섭지코지로 95<br>
+      2층 그랜드볼룸 · 064-000-0000
+    </p>
+
+    <div class="map-links reveal">
+      <!-- 좌표(33.4278, 126.9276)는 더미값입니다. 실제 예식장 좌표로 바꿔주세요. -->
+      <a class="map-links__btn" target="_blank" rel="noopener"
+         href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%20%EC%95%84%EC%BF%A0%EC%95%84%ED%94%8C%EB%9E%98%EB%8B%9B">네이버 지도</a>
+      <a class="map-links__btn" target="_blank" rel="noopener"
+         href="https://map.kakao.com/link/to/제주 서귀포 아쿠아플라넷 웨딩홀,33.4278,126.9276">카카오맵</a>
+      <a class="map-links__btn" target="_blank" rel="noopener"
+         href="https://www.google.com/maps/search/?api=1&query=33.4278,126.9276">구글 지도</a>
+    </div>
+
+    <dl class="place__info reveal">
+      <dt>주차</dt><dd>건물 지하 1~2층, 2시간 무료</dd>
+      <dt>대중교통</dt><dd>성산일출봉 정류장 하차 후 도보 10분</dd>
+      <dt>셔틀버스</dt><dd>제주공항 3번 게이트 앞, 예식 2시간 전 출발</dd>
+    </dl>
+  </section>
+
+  <hr class="rule reveal">
+
+  <!-- 6. 사진 갤러리 -->
+  <section class="section gallery-section">
+    <h2 class="section__title reveal">사진</h2>
+    <div class="gallery reveal" id="gallery">
+      <button class="gallery__item" type="button" data-index="0">
+        <img src="images/photo-02.jpg" alt="바닷가 돌담에 앉은 신랑 신부" loading="lazy">
+      </button>
+      <button class="gallery__item" type="button" data-index="1">
+        <img src="images/photo-03.jpg" alt="억새밭에서 등을 맞대고 선 신랑 신부" loading="lazy">
+      </button>
+      <button class="gallery__item" type="button" data-index="2">
+        <img src="images/photo-04.jpg" alt="귤밭에서 마주 보는 신랑 신부" loading="lazy">
+      </button>
+      <button class="gallery__item" type="button" data-index="3">
+        <img src="images/photo-05.jpg" alt="숲길에서 이마를 맞댄 신랑 신부" loading="lazy">
+      </button>
+    </div>
+    <p class="gallery__hint reveal">사진을 누르면 크게 볼 수 있어요</p>
+  </section>
+
+  <hr class="rule reveal">
+
+  <!-- 7. 마음 전하실 곳 -->
+  <section class="section account-section">
+    <h2 class="section__title reveal">마음 전하실 곳</h2>
+    <p class="account__lead reveal">
+      축하의 마음을 전하고 싶은 분들을 위해<br>
+      계좌번호를 안내드립니다.
+    </p>
+
+    <div class="accordion reveal">
+      <!-- 신랑측 -->
+      <div class="accordion__group">
+        <button class="accordion__head" type="button" aria-expanded="false">
+          <span>신랑측 계좌번호</span>
+          <span class="accordion__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="accordion__panel">
+          <ul class="account-list">
+            <li class="account">
+              <div class="account__who"><span class="account__role">신랑</span> 김도윤</div>
+              <div class="account__num">카카오뱅크 3333-01-1234567</div>
+              <div class="account__btns">
+                <button class="btn btn--copy" type="button" data-copy="3333-01-1234567">계좌번호 복사</button>
+                <button class="btn btn--kakao" type="button"
+                        data-kakaobank data-account="3333-01-1234567" data-holder="김도윤">카카오뱅크 송금</button>
+              </div>
+            </li>
+            <li class="account">
+              <div class="account__who"><span class="account__role">아버지</span> 김성호</div>
+              <div class="account__num">국민은행 123456-01-123456</div>
+              <div class="account__btns">
+                <button class="btn btn--copy" type="button" data-copy="123456-01-123456">계좌번호 복사</button>
+              </div>
+            </li>
+            <li class="account">
+              <div class="account__who"><span class="account__role">어머니</span> 이미경</div>
+              <div class="account__num">신한은행 110-123-456789</div>
+              <div class="account__btns">
+                <button class="btn btn--copy" type="button" data-copy="110-123-456789">계좌번호 복사</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 신부측 -->
+      <div class="accordion__group">
+        <button class="accordion__head" type="button" aria-expanded="false">
+          <span>신부측 계좌번호</span>
+          <span class="accordion__arrow" aria-hidden="true"></span>
+        </button>
+        <div class="accordion__panel">
+          <ul class="account-list">
+            <li class="account">
+              <div class="account__who"><span class="account__role">신부</span> 이서연</div>
+              <div class="account__num">카카오뱅크 3333-02-7654321</div>
+              <div class="account__btns">
+                <button class="btn btn--copy" type="button" data-copy="3333-02-7654321">계좌번호 복사</button>
+                <button class="btn btn--kakao" type="button"
+                        data-kakaobank data-account="3333-02-7654321" data-holder="이서연">카카오뱅크 송금</button>
+              </div>
+            </li>
+            <li class="account">
+              <div class="account__who"><span class="account__role">아버지</span> 이재우</div>
+              <div class="account__num">우리은행 1002-345-678901</div>
+              <div class="account__btns">
+                <button class="btn btn--copy" type="button" data-copy="1002-345-678901">계좌번호 복사</button>
+              </div>
+            </li>
+            <li class="account">
+              <div class="account__who"><span class="account__role">어머니</span> 박은주</div>
+              <div class="account__num">하나은행 123-456789-01234</div>
+              <div class="account__btns">
+                <button class="btn btn--copy" type="button" data-copy="123-456789-01234">계좌번호 복사</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule reveal">
+
+  <!-- 8. 참석 회신 (저장만 하고 화면에는 보이지 않습니다) -->
+  <section class="section rsvp-section">
+    <h2 class="section__title reveal">참석 회신</h2>
+    <p class="form__lead reveal">
+      찾아와 주시는 걸음에 맞춰 준비하려 합니다.<br>
+      참석 여부를 알려주시면 감사하겠습니다.
+    </p>
+
+    <form class="form reveal" id="rsvpForm" novalidate>
+      <label class="field">
+        <span class="field__label">이름</span>
+        <input class="field__input" type="text" name="name" maxlength="20"
+               autocomplete="name" placeholder="성함을 적어주세요" required>
+      </label>
+
+      <label class="field">
+        <span class="field__label">참석 인원</span>
+        <input class="field__input" type="number" name="headcount"
+               min="1" max="20" step="1" value="1" inputmode="numeric" required>
+        <span class="field__hint">본인을 포함한 인원</span>
+      </label>
+
+      <fieldset class="field field--choice">
+        <legend class="field__label">식사 여부</legend>
+        <div class="choice">
+          <label class="choice__item">
+            <input type="radio" name="meal" value="yes" checked>
+            <span>식사함</span>
+          </label>
+          <label class="choice__item">
+            <input type="radio" name="meal" value="no">
+            <span>식사 안 함</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <button class="btn btn--submit" type="submit">참석 회신 보내기</button>
+      <p class="form__msg" id="rsvpMsg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <hr class="rule reveal">
+
+  <!-- 9. 방명록 -->
+  <section class="section guestbook-section">
+    <h2 class="section__title reveal">방명록</h2>
+    <p class="form__lead reveal">
+      두 사람에게 남기고 싶은 한마디를 적어주세요.
+    </p>
+
+    <form class="form reveal" id="guestbookForm" novalidate>
+      <label class="field">
+        <span class="field__label">이름</span>
+        <input class="field__input" type="text" name="name" maxlength="20"
+               autocomplete="name" placeholder="성함을 적어주세요" required>
+      </label>
+
+      <label class="field">
+        <span class="field__label">한 줄 메시지</span>
+        <input class="field__input" type="text" name="message" maxlength="200"
+               placeholder="축하의 말을 남겨주세요" required>
+      </label>
+
+      <button class="btn btn--submit" type="submit">방명록 남기기</button>
+      <p class="form__msg" id="guestbookMsg" role="status" aria-live="polite"></p>
+    </form>
+
+    <ul class="entries reveal" id="guestbookList">
+      <li class="entries__empty">방명록을 불러오는 중입니다…</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__mark">D &nbsp;·&nbsp; S</p>
+    <p class="footer__text">2026. 11. 14</p>
+  </footer>
+
+</main>
+
+<!-- 갤러리 확대 보기 -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" type="button" aria-label="닫기"></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="이전 사진"></button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="다음 사진"></button>
+  <p class="lightbox__count" id="lightboxCount"></p>
+</div>
+
+<!-- 복사 완료 알림 -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
